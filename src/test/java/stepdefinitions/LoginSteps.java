@@ -37,4 +37,10 @@ public class LoginSteps {
 		System.out.println("Validating result");
 	}
 	
+	@Then("User should get error message")
+	public void validateError()
+	{
+		System.out.println("Error message validation");
+	}
+	
 }
