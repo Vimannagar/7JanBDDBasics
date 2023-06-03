@@ -10,5 +10,5 @@ Scenario: Login with invalid credentials
 Given User should be at login screen
 When User enters the username "usertwo"
 And User enters the password "invalidpassword"
-And User click on submit button
+And User click on submit 1 button
 Then User gets error message

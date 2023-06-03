@@ -40,7 +40,11 @@ public class LoginWithDataSteps {
 	public void user_enters_the_password(String string) {
 		System.out.println("Considered password as" + string);
 	}
-
+	@When("User click on submit {int} button")
+	public void user_click_on_submit_button(Integer int1) {
+	   System.out.println("click on submit button and value is "+int1);
+	}
+	
 	@Then("User gets error message")
 	public void user_gets_error_message() {
 		System.out.println("Then statement for errror message");
