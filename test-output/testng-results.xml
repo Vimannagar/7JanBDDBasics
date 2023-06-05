@@ -2,39 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-04T09:08:39 IST" name="Default suite" finished-at="2023-06-04T09:08:47 IST" duration-ms="7720">
+  <suite started-at="2023-06-05T09:30:10 IST" name="Default suite" finished-at="2023-06-05T09:30:15 IST" duration-ms="5088">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RegistrationRunner@3e11f9e9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ProfilePicRunner@3e11f9e9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-04T09:08:39 IST" name="Default test" finished-at="2023-06-04T09:08:47 IST" duration-ms="7720">
-      <class name="runners.RegistrationRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.RegistrationRunner@3e11f9e9]" started-at="2023-06-04T09:08:39 IST" name="setUpClass" finished-at="2023-06-04T09:08:41 IST" duration-ms="1471" status="PASS">
+    <test started-at="2023-06-05T09:30:10 IST" name="Default test" finished-at="2023-06-05T09:30:15 IST" duration-ms="5088">
+      <class name="runners.ProfilePicRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.ProfilePicRunner@3e11f9e9]" started-at="2023-06-05T09:30:10 IST" name="setUpClass" finished-at="2023-06-05T09:30:12 IST" duration-ms="1216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RegistrationRunner@3e11f9e9]" started-at="2023-06-04T09:08:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-04T09:08:41 IST" duration-ms="726" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ProfilePicRunner@3e11f9e9]" started-at="2023-06-05T09:30:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-05T09:30:13 IST" duration-ms="962" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Filling the information for bank account"]]>
+                <![CDATA["Add profile picture for a user"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Registration for account opening]"]]>
+                <![CDATA["Optional[Profile picture functionality]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RegistrationRunner@3e11f9e9]" started-at="2023-06-04T09:08:41 IST" name="tearDownClass" finished-at="2023-06-04T09:08:47 IST" duration-ms="5225" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.ProfilePicRunner@3e11f9e9]" started-at="2023-06-05T09:30:13 IST" name="tearDownClass" finished-at="2023-06-05T09:30:15 IST" duration-ms="2768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.RegistrationRunner -->
+      </class> <!-- runners.ProfilePicRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
