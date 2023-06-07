@@ -9,7 +9,9 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"stepdefinitions"},
 		
-		plugin = {"pretty"}
+		plugin = {"pretty"},
+		
+		dryRun = false
 		
 		
 		)
