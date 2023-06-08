@@ -1,56 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-07T08:46:23 IST" name="Default suite" finished-at="2023-06-07T08:46:28 IST" duration-ms="5628">
+  <suite started-at="2023-06-08T09:51:16 IST" name="Default suite" finished-at="2023-06-08T09:51:50 IST" duration-ms="33894">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.OrdersRunner@3e11f9e9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:execution.PolicyBazaarTest@7d0b7e3c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-07T08:46:23 IST" name="Default test" finished-at="2023-06-07T08:46:28 IST" duration-ms="5628">
-      <class name="runners.OrdersRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.OrdersRunner@3e11f9e9]" started-at="2023-06-07T08:46:23 IST" name="setUpClass" finished-at="2023-06-07T08:46:24 IST" duration-ms="1562" status="PASS">
+    <test started-at="2023-06-08T09:51:16 IST" name="Default test" finished-at="2023-06-08T09:51:50 IST" duration-ms="33894">
+      <class name="execution.PolicyBazaarTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:execution.PolicyBazaarTest@7d0b7e3c]" started-at="2023-06-08T09:51:16 IST" name="setUpClass" finished-at="2023-06-08T09:51:17 IST" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.OrdersRunner@3e11f9e9]" started-at="2023-06-07T08:46:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T08:46:25 IST" duration-ms="731" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:execution.PolicyBazaarTest@7d0b7e3c]" started-at="2023-06-08T09:51:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-08T09:51:31 IST" duration-ms="13663" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["fetch previouly placed order"]]>
+                <![CDATA["verify title"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Fetch order information]"]]>
+                <![CDATA["Optional[home page]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.OrdersRunner@3e11f9e9]" started-at="2023-06-07T08:46:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T08:46:25 IST" duration-ms="239" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:execution.PolicyBazaarTest@7d0b7e3c]" started-at="2023-06-08T09:51:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-08T09:51:40 IST" duration-ms="8914" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["fetch current placed order"]]>
+                <![CDATA["verify term insurance navigation"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Fetch order information]"]]>
+                <![CDATA["Optional[home page]"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at execution.HomePageSteps.user_should_get_redirect_to(HomePageSteps.java:44)
+at ✽.User should get redirect to "Term Life Insurance"(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.OrdersRunner@3e11f9e9]" started-at="2023-06-07T08:46:25 IST" name="tearDownClass" finished-at="2023-06-07T08:46:28 IST" duration-ms="2807" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:execution.PolicyBazaarTest@7d0b7e3c]" started-at="2023-06-08T09:51:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-08T09:51:48 IST" duration-ms="8284" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["entering information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[home page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nameAdd']"}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f77bcd304bd2a4206599cdd6354eb0d2, findElement {using=xpath, value=//*[@id='nameAdd']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f77bcd304bd2a4206599cdd6354eb0d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nameAdd']"}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f77bcd304bd2a4206599cdd6354eb0d2, findElement {using=xpath, value=//*[@id='nameAdd']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f77bcd304bd2a4206599cdd6354eb0d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
+at pages.HomePage.enteringDetails(HomePage.java:50)
+at execution.HomePageSteps.user_enters_name_as(HomePageSteps.java:52)
+at ✽.user enters name as "Daniel Smith"(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:execution.PolicyBazaarTest@7d0b7e3c]" started-at="2023-06-08T09:51:48 IST" name="tearDownClass" finished-at="2023-06-08T09:51:50 IST" duration-ms="1912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.OrdersRunner -->
+      </class> <!-- execution.PolicyBazaarTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

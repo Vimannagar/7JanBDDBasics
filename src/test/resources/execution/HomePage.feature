@@ -9,7 +9,7 @@ When User clicks on Term Life insurance
 Then User should get redirect to "Term Life Insurance"
 
 Scenario: entering information
-Given user should be at Term life insurance page
+Given User is at the landing page
 When user enters name as "Daniel Smith" 
 And user enters date as "07061995"
 And user enters mobile number as "9988776655"

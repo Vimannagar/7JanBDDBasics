@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 	
@@ -20,9 +21,13 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='mobileNo']")
 	WebElement mobile;
 	
+	@FindBy(xpath = "//*[@id='submitButton']")
+	WebElement freequotes;
+	
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	
@@ -43,11 +48,24 @@ public class HomePage {
 	public void enteringDetails(String nameofperson)
 	{
 		name.sendKeys(nameofperson);
+			
+	}
+	
+	public void enterDOB(String dateofbirth)
+	{
+		dob.sendKeys(dateofbirth);
+	}
+	
+	public void enterMobile(String mobilenumber)
+	{
+		mobile.sendKeys(mobilenumber);
 		
-		dob.sendKeys("07061995");
-		
-		mobile.sendKeys("9988776655");
-		
+	
+	}
+	
+	public void clickOnFreeQuote()
+	{
+		freequotes.click();
 	}
 	
 	
