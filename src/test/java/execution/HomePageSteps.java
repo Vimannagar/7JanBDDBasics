@@ -21,7 +21,7 @@ public void user_is_at_the_landing_page() {
 }
 
 @Then("Title of page should contains {string}")
-public void title_of_page_should_contains(String expectedtitle) {
+public void title_of_page_should_contains(String expectedtitle) throws InterruptedException {
 String title = homepage.getTitleOfPage();
 
 	boolean ispresent = title.contains(expectedtitle);
@@ -36,7 +36,7 @@ public void user_clicks_on_term_life_insurance() {
 }
 
 @Then("User should get redirect to {string}")
-public void user_should_get_redirect_to(String expectedtermtitle) {
+public void user_should_get_redirect_to(String expectedtermtitle) throws InterruptedException {
 	String title = homepage.getTitleOfPage();
 	
 	boolean ispresent = title.contains(expectedtermtitle);
@@ -46,7 +46,7 @@ public void user_should_get_redirect_to(String expectedtermtitle) {
 
 
 @When("user enters name as {string}")
-public void user_enters_name_as(String name) {
+public void user_enters_name_as(String name) throws InterruptedException {
 	homepage.navToTermPage();
 	
 	homepage.enteringDetails(name);

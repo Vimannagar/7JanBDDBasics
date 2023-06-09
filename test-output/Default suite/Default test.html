@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 08 09:51:16 IST 2023</td>
+<td>Started on:</td><td>Fri Jun 09 09:22:29 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33894 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38369 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='execution.PolicyBazaarTest.runScenario()'><b>runScenario</b><br>Test class: execution.PolicyBazaarTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "entering information", "Optional[home page]"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;nameAdd&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;submitButton123&apos;]&quot;}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f77bcd304bd2a4206599cdd6354eb0d2, findElement {using=xpath, value=//*[@id=&apos;nameAdd&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f77bcd304bd2a4206599cdd6354eb0d2
+Command: [3e34461664505dcd93887b1357a93f46, findElement {using=xpath, value=//*[@id=&apos;submitButton123&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51227}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51227/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e34461664505dcd93887b1357a93f46
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -104,20 +104,20 @@ Session ID: f77bcd304bd2a4206599cdd6354eb0d2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
-	at pages.HomePage.enteringDetails(HomePage.java:50)
-	at execution.HomePageSteps.user_enters_name_as(HomePageSteps.java:52)
-	at ?.user enters name as &quot;Daniel Smith&quot;(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:13)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1293251731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1293251731'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;nameAdd&apos;]&quot;}
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at pages.HomePage.clickOnFreeQuote(HomePage.java:80)
+	at execution.HomePageSteps.user_clicks_on_view_free_quotes_button(HomePageSteps.java:68)
+	at ?.User clicks on view free quotes button(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1840457976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1840457976'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;submitButton123&apos;]&quot;}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f77bcd304bd2a4206599cdd6354eb0d2, findElement {using=xpath, value=//*[@id=&apos;nameAdd&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f77bcd304bd2a4206599cdd6354eb0d2
+Command: [3e34461664505dcd93887b1357a93f46, findElement {using=xpath, value=//*[@id=&apos;submitButton123&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51227}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51227/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e34461664505dcd93887b1357a93f46
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -136,33 +136,13 @@ Session ID: f77bcd304bd2a4206599cdd6354eb0d2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
-	at pages.HomePage.enteringDetails(HomePage.java:50)
-	at execution.HomePageSteps.user_enters_name_as(HomePageSteps.java:52)
-	at ?.user enters name as &quot;Daniel Smith&quot;(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:13)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at pages.HomePage.clickOnFreeQuote(HomePage.java:80)
+	at execution.HomePageSteps.user_clicks_on_view_free_quotes_button(HomePageSteps.java:68)
+	at ?.User clicks on view free quotes button(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:16)
 </pre></div></td>
-<td>8</td>
-<td>execution.PolicyBazaarTest@7d0b7e3c</td></tr>
-<tr>
-<td title='execution.PolicyBazaarTest.runScenario()'><b>runScenario</b><br>Test class: execution.PolicyBazaarTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify term insurance navigation", "Optional[home page]"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at execution.HomePageSteps.user_should_get_redirect_to(HomePageSteps.java:44)
-	at ?.User should get redirect to &quot;Term Life Insurance&quot;(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1857852787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1857852787'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at execution.HomePageSteps.user_should_get_redirect_to(HomePageSteps.java:44)
-	at ?.User should get redirect to &quot;Term Life Insurance&quot;(file:///F:/Desktop/VimanNagar/May%2021/7JanBDDCucumberBasics/src/test/resources/execution/HomePage.feature:9)
-</pre></div></td>
-<td>8</td>
-<td>execution.PolicyBazaarTest@7d0b7e3c</td></tr>
+<td>13</td>
+<td>execution.PolicyBazaarTest@8458f04</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -173,10 +153,10 @@ Session ID: f77bcd304bd2a4206599cdd6354eb0d2
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='execution.PolicyBazaarTest.runScenario()'><b>runScenario</b><br>Test class: execution.PolicyBazaarTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify title", "Optional[home page]"</td>
+<td title='execution.PolicyBazaarTest.runScenario()'><b>runScenario</b><br>Test class: execution.PolicyBazaarTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify term insurance navigation", "Optional[home page]"</td>
 <td></td>
-<td>13</td>
-<td>execution.PolicyBazaarTest@7d0b7e3c</td></tr>
+<td>14</td>
+<td>execution.PolicyBazaarTest@8458f04</td></tr>
 </table><p>
 </body>
 </html>
