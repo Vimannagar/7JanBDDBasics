@@ -6,9 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		
-//		features = {"src\\test\\resources\\execution"},
+		features = {"src\\test\\resources\\execution"},
 		
-		features = {"@target/FailedRun.txt"},
+//		features = {"@target/FailedRun.txt"},
 		
 		glue = {"execution"},
 		
